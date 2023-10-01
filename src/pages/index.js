@@ -36,7 +36,7 @@ const Home = () => {
     <StyledJsxRegistry>
       <Main>
         <Wrapper>
-          <Select label="Выбирите период" values={periods} onChange={(v) => setPeriod(v)} />
+          <Select label="Выберите период" values={periods} onChange={(v) => setPeriod(v)} />
           <Chart values={data} />
         </Wrapper>
       </Main>
