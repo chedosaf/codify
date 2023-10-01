@@ -27,15 +27,15 @@ const TooltipContainer = styled.div`
 
   &:hover span {
   visibility: visible;
-  opacity: 1;
+  opacity: 1; 
 }
 `
-
+const PROCENT_TOP_POSITION_TOOLTIP = 88
 
 const Tooltip = ({ text, children, height }) => {
 
   return (
-    <TooltipContainer $height={88 - height + "%"}>
+    <TooltipContainer $height={PROCENT_TOP_POSITION_TOOLTIP - height + "%"}>
       <span>{text}</span>
       {children}
     </TooltipContainer>
