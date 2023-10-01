@@ -13,9 +13,6 @@ const Main = styled.div`
   width: 100vw;
   height: 100vh;
   padding: 40px;
-  flex-shrink: 0;
-  border-radius: 27px;
-  background: rgba(255, 0, 245, 0.05);
 `
 const Wrapper = styled.div`
   width: 995px;
