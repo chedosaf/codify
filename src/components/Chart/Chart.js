@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { v4 as uuidv4 } from 'uuid';
 
 import AxisX from './components/AxisX/AxisX'
 import AxisY from './components/AxisY/AxisY'
@@ -23,8 +24,9 @@ const AxisYMainGrafContainer = styled.div`
 
 
 const Chart = ({ values = {} }) => {
-  const valuesGraf = Object.values(values)
+  const valuesGraf = Object.values(values).map((i) => ({ value: i, id: uuidv4() }))
   const valuesX = Object.keys(values)
+
   return (
     <ChartContainer>
       <AxisYMainGrafContainer>

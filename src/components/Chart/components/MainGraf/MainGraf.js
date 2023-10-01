@@ -12,7 +12,7 @@ const MainGrafContainer = styled.div`
 
 const MainGraf = ({ values }) => {
   return (<MainGrafContainer>
-    {values.map((value, i) => <Pillar key={i} value={value} />)}
+    {values.map((value) => <Pillar key={value.id} value={value.value} />)}
   </MainGrafContainer>)
 }
 
