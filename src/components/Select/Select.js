@@ -42,7 +42,6 @@ display: flex;
 flex-direction: column;
 gap: 16px;
 transition: max-height 0.2s ease;
-overflow: scroll;
 ${(p) =>
     p.isvisible !== true &&
     css`
